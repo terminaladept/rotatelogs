@@ -11,9 +11,9 @@ $logfiles=(Get-ChildItem $logpath | Where-Object {$_.LastWriteTime -lt $compress
 
 ForEach ($logfile in $logfiles) {
     
+    #Find out what month the file was last written to
     $fileLastWriteMonth=$logfile.LastWriteTime.Month
-    write-host $fileLastWriteMonth
-    write-host $logpath\$currentYear\"$currentMonth".zip
+    
     # File written this month
     if ($fileLastWriteMonth -eq $currentMonth) 
     {
