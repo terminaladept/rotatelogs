@@ -18,9 +18,8 @@ A simple Powerhsell script to rotate log files. Adds desired files to an archive
     - If Last written last month & that month was not December
     - if Last written last month & that month was December
     <br>
-    - Then delete file after added to archive
-    <br>
-    - If month doesn't match print a warning and skip archive and delete step
+3. Then delete file after added to archive
+4. If month doesn't match print a warning and skip archive and delete step
 
 ### Possible improvements
 - Try/Catch on deletion before deletion
